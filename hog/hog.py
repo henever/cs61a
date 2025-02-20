@@ -446,6 +446,7 @@ def final_strategy(score, opponent_score):
     """
     # BEGIN PROBLEM 12
     return 6  # Replace this statement
+
     # END PROBLEM 12
 
 ##########################
@@ -465,6 +466,6 @@ def run(*args):
                         help='Runs strategy experiments')
 
     args = parser.parse_args()
-
+    
     if args.run_experiments:
         run_experiments()

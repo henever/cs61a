@@ -65,7 +65,7 @@ def compose1(f, g):
     >>> a1 = compose1(square, add_one)   # (x + 1)^2
     >>> a1(4)
     25
-    >>> mul_three = lambda x: x * 3      # multiplies 3 to x
+    >>> mul_three = lambda x: x * 3      # multiplies 3 to x    
     >>> a2 = compose1(mul_three, a1)    # ((x + 1)^2) * 3
     >>> a2(4)
     75
@@ -125,7 +125,7 @@ def cycle(f1, f2, f3):
     """
     def n_func(n): # To get n
         
-        def exe_func(x): # The final function
+        def exe_func(x): # The final function 
             nonlocal n
             ans = x
             while n>3 :
@@ -138,8 +138,10 @@ def cycle(f1, f2, f3):
             if n==2 :
                 return f2(f1(ans))
             if n==1 :
+                
                 return f1(ans)
             return ans
         return exe_func
     return n_func
 
+ 
